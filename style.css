@@ -285,19 +285,10 @@ section h2::after{
 ================================== */
 
 .about{
-    position:relative;
-
-    background:
-    linear-gradient(
-        rgba(255,255,255,.80),
-        rgba(255,255,255,.80)
-    ),
-    url("Purplebackground1.png");
-
+    background:url("Purplebackground1.png");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-
     padding:80px 20px;
 }
 
@@ -306,6 +297,58 @@ section h2::after{
     margin:auto;
     text-align:center;
 }
+
+.about-content h2{
+    font-size:32px;
+    margin-bottom:50px;
+    color:#ffffff;
+}
+
+.about-grid{
+    display:flex;
+    gap:25px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+/* BOXES */
+
+.about-block{
+    flex:1;
+    min-width:280px;
+
+    background:rgba(255,255,255,0.95);
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.15);
+
+    text-align:left;
+
+    transition:.3s ease;
+}
+
+.about-block:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.20);
+}
+
+.about-block h3{
+    color:var(--primary);
+    margin-bottom:15px;
+    font-size:1.4rem;
+}
+
+.about-block p{
+    color:#444;
+    line-height:1.8;
+}
+
 
 /* ==================================
    WHY CHOOSE US
