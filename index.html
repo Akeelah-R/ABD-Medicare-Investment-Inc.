@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="abdtitlelogo.PNG">
+    <link rel="icon" type="image/png" href="imagesabd/abdtitlelogo.PNG">
     <title>ABD Medicare Investment Inc.</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,7 +13,7 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-    <img src="ABDLogo.jpg" alt="ABD Medicare Logo">
+    <img src="imagesabd/ABDLogo.jpg" alt="ABD Medicare Logo">
 </div>
 
             <ul class="nav-links">
@@ -205,20 +205,135 @@
     </div>
 
 </section>
+<!-- Featured Products -->
+<section class="catalogue-preview">
+
+    <h2>Featured Medical Products</h2>
+
+    <p>
+        Browse some of our most requested healthcare and medical support products.
+    </p>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+
+            <img src="imagesabd/wristsupport.jpg" alt="Wrist Support">
+
+            <div class="product-info">
+
+                <h3>Elastic Wrist Support</h3>
+
+                <p>
+                    Comfortable compression support designed to reduce strain and
+                    promote recovery.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="product-card">
+
+            <img src="imagesabd/waistsupport.jpg" alt="Waist Support">
+
+            <div class="product-info">
+
+                <h3>Waist Support</h3>
+
+                <p>
+                    Provides support and compression for the waist area, helping to reduce pain and improve posture.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="product-card">
+
+            <img src="imagesabd/kneesupport.jpg" alt="Knee Support">
+
+            <div class="product-info">
+
+                <h3>Knee Support Brace</h3>
+
+                <p>
+                    Stabilizes the knee and assists with injury prevention and recovery.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <a href="catalogue.html" class="catalogue-btn">
+        View Complete Catalogue
+    </a>
+
+</section>
 
     <!-- Contact -->
     <section class="contact" id="contact">
 
         <h2>Contact Us</h2>
 
-        <form>
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email Address">
-            <input type="tel" placeholder="Phone Number">
-            <textarea placeholder="Your Message"></textarea>
+        <form action="https://formspree.io/f/mjgqjgzw" method="POST">
 
-            <button type="submit">Send Message</button>
-        </form>
+    <input 
+        type="text" 
+        name="full_name" 
+        placeholder="Full Name" 
+        required
+    >
+
+    <input 
+        type="email" 
+        name="email" 
+        placeholder="Email Address" 
+        required
+    >
+
+    <input 
+        type="tel" 
+        name="phone" 
+        placeholder="Phone Number" 
+        required
+    >
+
+    <input 
+        type="text" 
+        name="product" 
+        placeholder="Product Interested In"
+        required
+    >
+
+    <input 
+        type="text" 
+        name="location" 
+        placeholder="Location / Delivery Area"
+    >
+
+    <input 
+        type="date" 
+        name="preferred_delivery_date"
+    >
+
+    <textarea 
+        name="message" 
+        placeholder="Tell us what product you need, quantity, or any quote details"
+        required
+    ></textarea>
+
+    <input 
+        type="hidden" 
+        name="_subject" 
+        value="New Product Quote Request - ABD Medicare"
+    >
+
+    <button type="submit">Request Quote</button>
+
+</form>
 
     </section>
 
