@@ -336,6 +336,19 @@
     <footer>
         <p>© 2026 ABD Medicare. All Rights Reserved.</p>
     </footer>
+<script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedProduct = urlParams.get("product");
 
+        if (selectedProduct) {
+            const productInput = document.getElementById("productInterested");
+
+            if (productInput) {
+                productInput.value = selectedProduct;
+            }
+        }
+    </script>
+
+    
 </body>
 </html>
